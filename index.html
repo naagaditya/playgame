@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ADitya</title>
+</head>
+<script type="text/javascript">
+    function shuffle1() {
+        group1.innerHTML = Math.floor(Math.random() * 6) + 1;
+    }
+    function shuffle2() {
+        group2.innerHTML = String.fromCharCode(Math.floor(Math.random() * 7) + 65);
+    }
+</script>
+<body>
+    <div>
+        <button onclick="shuffle1()">Shuffle group 1</button>
+        <span id="group1"></span>
+    </div>
+    <div>
+        <button onclick="shuffle2()">Shuffle group 2</button>
+        <span id="group2"></span>
+    </div>
+    
+</body>
+</html>
