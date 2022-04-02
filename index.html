@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+      
 	<title>ADitya</title>
 </head>
-<script type="text/javascript">
-    function shuffle1() {
-        group1.innerHTML = Math.floor(Math.random() * 6) + 1;
-    }
-    function shuffle2() {
-        group2.innerHTML = String.fromCharCode(Math.floor(Math.random() * 7) + 65);
-    }
-    function clear1() {
-        group1.innerHTML = '';
-        group2.innerHTML = '';
-    }
-</script>
+
 <body>
+    <div id="welcome"></div>
+    <table id="msgBody"></table>
     <div>
-        <button onclick="shuffle1()">Shuffle group 1</button>
-        <span id="group1"></span>
+        <button id="shuffle" onclick="shuffle()">Shuffle</button>
     </div>
-    <div>
-        <button onclick="shuffle2()">Shuffle group 2</button>
-        <span id="group2"></span>
-    </div>
-    <div>
-        <button onclick="clear1()">clear</button>
-    </div>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
